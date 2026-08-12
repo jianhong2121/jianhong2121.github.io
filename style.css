@@ -1,0 +1,107 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f9fa;
+}
+
+/* 导航栏样式 */
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+header .logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #007acc;
+}
+
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #666;
+}
+
+nav a:hover {
+    color: #007acc;
+}
+
+/* 页面布局（使用 Flexbox） */
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.post-list {
+    flex: 3; /* 占 3 份宽度 */
+}
+
+.sidebar {
+    flex: 1; /* 占 1 份宽度 */
+}
+
+/* 文章卡片样式 */
+.post-card {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: transform 0.2s;
+}
+
+.post-card:hover {
+    transform: translateY(-3px);
+}
+
+.post-card h2 a {
+    color: #222;
+    text-decoration: none;
+}
+
+.post-card h2 a:hover {
+    color: #007acc;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    color: #999;
+    margin: 0.5rem 0 1rem 0;
+}
+
+/* 侧边栏小部件 */
+.widget {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.widget h3 {
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.5rem;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #999;
+    font-size: 0.9rem;
+}
