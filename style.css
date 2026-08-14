@@ -55,6 +55,15 @@ nav a:hover {
     flex: 1; /* 占 1 份宽度 */
 }
 
+.sidebar-avatar {
+    width: 120px;         /* Set explicit width */
+    height: 120px;        /* Set explicit height */
+    object-fit: cover;   /* Prevents the image from stretching if aspect ratio differs */
+    border-radius: 50%;  /* Optional: makes the image round */
+    margin-bottom: 12px; /* Space between image and text */
+}
+
+
 /* 文章卡片样式 */
 .post-card {
     background: #fff;
